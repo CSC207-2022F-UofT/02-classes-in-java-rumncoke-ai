@@ -114,7 +114,6 @@ public class Silly implements Comparable<Silly>{
 
         Silly x = new Silly("something");
         Silly y = new Silly("something else");
-
         /**
          * TODO (Task 2): Below are a bunch of calls to countStatic using
          *                two different instances of Silly.
@@ -173,7 +172,7 @@ public class Silly implements Comparable<Silly>{
         // Hint: to compare strings, we need to use .equals()
         //       e.g. s1.equals(s2)
 
-        return ((Silly) o).name.equals(other.name);
+        return (this.name.equals(other.name));
     }
 
     /**
@@ -215,7 +214,7 @@ public class Silly implements Comparable<Silly>{
         } else if (this_length == other_length) {
             return 0;
         } else {
-            return 0;
+            return -1;
         }
     }
 
